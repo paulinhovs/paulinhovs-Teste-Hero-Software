@@ -80,19 +80,26 @@ class _LoginPageState extends State<LoginPage> {
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              primary: Colors.green,
-              onPrimary: Colors.black,
-              minimumSize: const Size.fromHeight(50),
-            ),
+                primary: Colors.green,
+                onPrimary: Colors.black,
+                minimumSize: const Size.fromHeight(50),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(32.0),
+                )),
             onPressed: () {},
             child: Text('ENTRAR'),
           ),
           Padding(
             padding: EdgeInsets.all(10),
           ),
-          Text(
-            'Esqueci minha senha',
-            style: TextStyle(color: Colors.white, fontSize: 14),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/senha');
+            },
+            child: Text(
+              'Esqueci minha senha',
+              style: TextStyle(color: Colors.white, fontSize: 13),
+            ),
           ),
           ElevatedButton(
             onPressed: () {
@@ -104,7 +111,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.all(78),
+            padding: EdgeInsets.all(60),
           ),
           Stack(
             children: [

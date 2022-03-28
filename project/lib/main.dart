@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/src/cadastro_page.dart';
 import 'package:project/src/login_page.dart';
+import 'package:project/src/senha_page.dart';
 import 'package:project/src/splash_page.dart';
 
 void main() {
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         '/splash': (_) => const SplashPage(),
         '/login': (_) => LoginPage(),
         '/register': (_) => const RegisterPage(),
+        '/senha': (_) => const SenhaPage(),
       },
     );
   }
