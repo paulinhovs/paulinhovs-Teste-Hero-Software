@@ -95,7 +95,9 @@ class _LoginPageState extends State<LoginPage> {
             style: TextStyle(color: Colors.white, fontSize: 14),
           ),
           ElevatedButton(
-            onPressed: null,
+            onPressed: () {
+              Navigator.pushNamed(context, '/register');
+            },
             child: Text(
               'Cadastre-se',
               style: TextStyle(color: Colors.white, fontSize: 13),
