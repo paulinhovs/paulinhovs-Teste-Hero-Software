@@ -92,7 +92,7 @@ class _LoginPageState extends State<LoginPage> {
           Padding(
             padding: EdgeInsets.all(10),
           ),
-          ElevatedButton(
+          TextButton(
             onPressed: () {
               Navigator.pushNamed(context, '/senha');
             },
@@ -101,7 +101,7 @@ class _LoginPageState extends State<LoginPage> {
               style: TextStyle(color: Colors.white, fontSize: 13),
             ),
           ),
-          ElevatedButton(
+          TextButton(
             onPressed: () {
               Navigator.pushNamed(context, '/register');
             },
